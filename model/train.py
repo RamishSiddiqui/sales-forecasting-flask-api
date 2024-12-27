@@ -7,7 +7,7 @@ import lightgbm as lgb
 def train_model():
     # Load data
     print("Loading data...")
-    df = pd.read_csv('../data/train.csv')
+    df = pd.read_csv('../data/preprocessed_train.csv')
     
     # Convert date column
     df['date'] = pd.to_datetime(df['date'])

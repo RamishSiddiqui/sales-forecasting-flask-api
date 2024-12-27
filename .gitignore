@@ -25,12 +25,6 @@ wheels/
 venv/
 ENV/
 
-# Data and Models
-data/
-*.csv
-*.pkl
-*.h5
-
 # IDEs
 .idea/
 .vscode/
@@ -39,4 +33,10 @@ data/
 
 # OS
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Project specific
+data/
+*.csv
+# Keep the model files
+!model/*.pkl 
